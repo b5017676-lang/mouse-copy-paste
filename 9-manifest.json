@@ -1,0 +1,25 @@
+
+{
+  "manifest_version": 3,
+  "name": "העתקה והדבקה בעכבר",
+  "version": "1.7",
+  "description": "הדבקה בלחיצה על סמל התוסף והעתקה מתפריט קליק ימני על הסמל.",
+  "permissions": [
+    "contextMenus",
+    "clipboardRead",
+    "offscreen",
+    "scripting",
+    "activeTab",
+    "debugger"
+  ],
+  "host_permissions": [
+    "https://docs.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "הדבק"
+  }
+}
+
